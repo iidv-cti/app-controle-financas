@@ -1,0 +1,131 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Website CSS style -->
+		
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="../css/cadastro.css">
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Admin</title>
+	</head>
+	<body>
+		<form class="form-horizontal" id="formCadastro" method="GET" action="">
+			<fieldset>
+			
+			<!-- Form Name -->
+			<legend>Cadastro</legend>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Nome</label>  
+			  <div class="col-md-4">
+			  <input id="nome" name="textinput" type="text" placeholder="" class="form-control input-md">
+				
+			  </div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Idade</label>  
+			  <div class="col-md-4">
+			  <input id="idade" name="textinput" type="text" placeholder="" class="form-control input-md">
+				
+			  </div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">CPF</label>  
+			  <div class="col-md-4">
+			  <input id="cpf" name="textinput" type="text" placeholder="" class="form-control input-md">
+				
+			  </div>
+			</div>
+			
+		
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Email</label>  
+			  <div class="col-md-4">
+			  <input id="email" name="textinput" type="email" placeholder="" class="form-control input-md">
+				
+			  </div>
+			</div>
+			
+			<!-- Password input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="passwordinput">Senha</label>
+			  <div class="col-md-4">
+				<input id="senha" name="passwordinput" type="password" placeholder="" class="form-control input-md">
+				
+			  </div>
+			</div>
+			
+			<!-- Multiple Radios -->
+			<form class="form-horizontal">
+				<fieldset>
+				
+				<!-- Form Name -->
+				
+				
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="radios">Sexo</label>
+					<div class="col-md-4">
+					<div class="radio">
+						<label for="radios-0">
+							<input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+							Masculino
+						</label>
+					</div>
+					<div class="radio">
+						<label for="radios-1">
+							<input type="radio" name="radios" id="radios-1" value="2">
+							Feminino
+						</label>
+					</div>
+					</div>
+				</div>
+				
+				</fieldset>
+				</form>
+				
+			
+			<!-- Button (Double) -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="button1id"></label>
+			  <div class="col-md-8">
+				<button  type="submit"    id="enviar" name="button1id"  class="btn btn-primary" onclick="back()">Confirmar</button>
+				<button id="button2id" name="button2id" class="btn btn-danger" onclick="back()">Cancelar</button>
+				<input type="hidden" id="formulario" value="alguma coisa"/>
+			  </div>
+			</div>
+			
+			</fieldset>
+			</form>
+			
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+		<script src="../js/telaCadastro.js"></script>
+		<script src="../js/jquery.js"></script>
+	</body>
+</html>
